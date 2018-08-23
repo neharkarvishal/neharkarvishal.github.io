@@ -1,6 +1,53 @@
----
+# Welcome to Jekyll!
+#
+# This config file is meant for settings that affect your whole blog, values
+# which you are expected to set up once and rarely need to edit after that.
+# For technical reasons, this file is *NOT* reloaded automatically when you use
+# 'jekyll serve'. If you change this file, please restart the server process.
+
+# Site settings:
 title: Vishal Neharkar
 timezone: Asia/Kolkata
+email: neharkar.vishal@gmail.com
+description: A blog about programming.
+
+baseurl: ""                       # the subpath of your site, e.g. /blog
+url: https://neharkar.ml          # the base hostname & protocol for your site
+
+# SEO settings
+twitter:
+  username: cyb3r_fr3ak
+author: vishal_neharkar
+social:
+  name: Vishal Neharkar
+  links:
+    - https://twitter.com/
+    - https://github.com/neharkarvishal
+    - https://www.linkedin.com/in/neharkar
+
+# Build settings
+markdown: kramdown
+markdown_ext:        "markdown,mkdown,mkdn,mkd,md"
+include:             [".htaccess"]
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - node_modules
+  - vendor/bundle/
+  - vendor/cache/
+  - vendor/gems/
+  - vendor/ruby/
+  - venv
+  - vendor
+
+# Where things are
+source:          .
+destination:     ./_site
+# collections_dir: .
+plugins_dir:     _plugins
+layouts_dir:     _layouts
+data_dir:        _data
+includes_dir:    _includes
 collections:
   posts:
     title: Posts
@@ -8,49 +55,28 @@ collections:
   uploads:
     title: Uploads
     output: true
-email: neharkar.vishal@gmail.com
-description: A blog about programming.
-baseurl: ''
-url: https://neharkar.ml
-twitter:
-  username: cyb3r_fr3ak
-author: vishal_neharkar
-social:
-  name: Vishal Neharkar
-  links:
-  - https://twitter.com/
-  - https://github.com/neharkarvishal
-  - https://www.linkedin.com/in/neharkar
-markdown: kramdown
-markdown_ext: markdown,mkdown,mkdn,mkd,md
-include:
-- ".htaccess"
-exclude:
-- Gemfile
-- Gemfile.lock
-- node_modules
-- vendor/bundle/
-- vendor/cache/
-- vendor/gems/
-- vendor/ruby/
-- venv
-- vendor
-source: "."
-destination: "./_site"
-plugins_dir: _plugins
-layouts_dir: _layouts
-data_dir: _data
-includes_dir: _includes
 sass:
   style: compressed
-show_drafts: 
+
+# Filtering Content
+show_drafts: null
 limit_posts: 0
-future: false
+future:      false
 unpublished: false
+
+# Serving
+# detach:  false
+# port:    4000
+# host:    127.0.0.1
+# baseurl: "" # does not include hostname
+# show_dir_listing: false
+
 liquid:
-  error_mode: warn
-  strict_filters: false
+  error_mode:       warn
+  strict_filters:   false
   strict_variables: false
+
+# Plugins
 gems:
-- jekyll-sitemap
-- jekyll-seo-tag
+  - jekyll-sitemap
+  - jekyll-seo-tag
