@@ -59,7 +59,7 @@ sass:
   style: compressed
 
 # Filtering Content
-show_drafts: null
+show_drafts:
 limit_posts: 0
 future:      false
 unpublished: false
