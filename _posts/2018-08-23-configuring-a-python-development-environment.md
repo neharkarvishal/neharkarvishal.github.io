@@ -3,6 +3,8 @@ title: Configuring a Python Development Environment
 date: 2018-08-23 00:00:00 +05:30
 categories:
 - tech
+tags:
+- python
 layout: post
 ---
 
