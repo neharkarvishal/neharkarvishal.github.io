@@ -13,8 +13,10 @@
   </script>
   <!-- End Google Analytics -->
 
-  <link rel="stylesheet" href="/css/syntax.css">
-  <link rel="stylesheet" href="/css/vishalneha.css">
+  <link rel="preload" href="/css/syntax.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+  <noscript><link rel="stylesheet" href="/css/vishalneha.css"></noscript>
+  <link rel="preload" href="/css/vishalneha.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+  <noscript><link rel="stylesheet" href="/css/vishalneha.css"></noscript>
 
   <link rel="alternate" type="application/rss+xml" title="{{ site.title }}" href="{{ "/feed.xml" | prepend: site.baseurl | prepend: site.url }}">
   <link rel="icon" type="image/png" href="/assets/img/favicon.ico" />
