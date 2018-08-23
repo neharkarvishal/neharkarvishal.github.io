@@ -1,8 +1,9 @@
 ---
+title: Configuring a Python Development Environment
+date: 2018-08-23 00:00:00 +05:30
+categories:
+- tech
 layout: post
-title: "Configuring a Python Development Environment"
-date: 2018-8-23
-categories: tech
 ---
 
 This article outlines how to set up a Python development environment, and introduces tools to aid development work. This article is intended for those who are unfamiliar with Python, but have experience using a text editor and the command line. The Python language itself is not covered.
