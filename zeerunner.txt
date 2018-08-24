@@ -1,0 +1,15 @@
+clean-build:
+	bundle exec jekyll clean
+
+build:  # Create the static and store it in _site/
+	bundle exec jekyll build
+
+build-dev:  # Create the static and store it in _site/
+	bundle exec jekyll build --drafts
+
+bundler-update:
+    bundle update
+    bundle exec jekyll serve --watch
+
+run-and-autowatch:
+    jekyll serve --watch
