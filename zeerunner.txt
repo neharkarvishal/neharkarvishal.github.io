@@ -8,6 +8,7 @@ build-dev:  # Create the static and store it in _site/
 	bundle exec jekyll build --drafts
 
 bundler-update:
+    bundle install
     bundle update
     bundle exec jekyll serve --watch
 
