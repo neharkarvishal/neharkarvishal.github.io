@@ -24,4 +24,4 @@ Fresher, Bachelor of Engineering, Went to International institute of information
 - [\#mysite](https://github.com/neharkarvishal/mysite), template WebApp for building blog, made using Django/Python.
 - [CalculatorDroid](https://github.com/neharkarvishal/CalculatorDroid), android application for basic arithmetic calculations.
 - [Hash_tables_for_C](https://github.com/neharkarvishal/hash_tables_in_C), implementation of Hash tables for C.
-- [neharkar.io](https://github.com/neharkarvishal/neharkarvishal.github.io), .personal blog and website built with Jekyll/Gitpages
+- [neharkar.io](https://github.com/neharkarvishal/neharkarvishal.github.io), .personal blog and website built with Jekyll/Gitpages.
