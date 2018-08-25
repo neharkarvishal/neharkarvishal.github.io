@@ -3,8 +3,9 @@ title: Blog
 layout: default
 ---
 
-# Blog
 {% include breadcrumbs.html %}
+[comment]: # Blog list
+
 {% for post in site.categories.tech %}
 - `{{ post.date | date: "%Y-%m-%d" }}` - [{{ post.title }}]({{ post.url }}) {% endfor %}
 

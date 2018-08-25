@@ -14,7 +14,7 @@ description: A blog about programming, gaming and internet culture.
 baseurl: ""                       # the subpath of your site, e.g. /blog
 url: https://neharkar.ml          # the base hostname & protocol for your site
 logo: /assets/img/baseED.png
-
+permalink: /blog/:title/
 # SEO settings
 twitter:
   username: cyb3r_fr3ak

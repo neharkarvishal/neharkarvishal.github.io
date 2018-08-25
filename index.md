@@ -15,7 +15,7 @@ Fresher, Bachelor of Engineering, Went to International institute of information
 
 ## Blog
 
-[All posts](/blog.html)
+[All posts](/blog/)
 {% for post in site.categories.tech limit: 3 %}
 - `{{ post.date | date: "%Y-%m-%d" }}` - [{{ post.title }}]({{ post.url }}) {% endfor %}
 
