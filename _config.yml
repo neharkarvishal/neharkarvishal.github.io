@@ -19,7 +19,8 @@ logo: /assets/img/baseED.png
 twitter:
   username: cyb3r_fr3ak
   card: summary
-author: Vishal Neharkar
+author:
+  twitter: cyb3r_fr3ak
 social:
   name: Vishal Neharkar
   links:
@@ -27,6 +28,7 @@ social:
     - https://github.com/neharkarvishal
     - https://www.linkedin.com/in/neharkar
     - https://www.facebook.com/Cyb3r.fr3ak/
+    - https://www.instagram.com/vishal_neharkar/
 
 # Build settings
 markdown: kramdown
