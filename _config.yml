@@ -20,18 +20,13 @@ twitter:
   username: cyb3r_fr3ak
   card: summary
 author: Vishal Neharkar
-  links:
-  - https://twitter.com/cyb3r_fr3ak
-  - https://github.com/neharkarvishal
-  - https://www.linkedin.com/in/neharkar
-  - https://www.facebook.com/Cyb3r.fr3ak
 social:
   name: Vishal Neharkar
   links:
     - https://twitter.com/cyb3r_fr3ak
     - https://github.com/neharkarvishal
     - https://www.linkedin.com/in/neharkar
-    - https://www.facebook.com/Cyb3r.fr3ak
+    - https://www.facebook.com/Cyb3r.fr3ak/
 
 # Build settings
 markdown: kramdown
