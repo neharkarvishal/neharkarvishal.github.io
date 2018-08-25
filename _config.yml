@@ -9,21 +9,24 @@
 title: Vishal Neharkar
 timezone: Asia/Kolkata
 email: neharkar.vishal@gmail.com
-description: A blog about programming.
+description: A blog about programming, gaming and internet culture.
 
 baseurl: ""                       # the subpath of your site, e.g. /blog
 url: https://neharkar.ml          # the base hostname & protocol for your site
+logo: /assets/img/baseED.png
 
 # SEO settings
 twitter:
   username: cyb3r_fr3ak
+  card: summary
 author: vishal_neharkar
 social:
   name: Vishal Neharkar
   links:
-    - https://twitter.com/
+    - https://twitter.com/cyb3r_fr3ak
     - https://github.com/neharkarvishal
     - https://www.linkedin.com/in/neharkar
+    - https://www.facebook.com/Cyb3r.fr3ak/
 
 # Build settings
 markdown: kramdown
