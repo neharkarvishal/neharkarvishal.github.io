@@ -19,6 +19,9 @@ deploy-prod: clean build  # Deploy the production website to S3
 deploy-dev: clean build-dev
 	aws --region eu-west-2 s3 sync _site s3://dev.example.com --delete
 
+watch:
+	bundle exec jekyll serve --watch
+
 install:
 	mkdir -p vendor
 	bundle install --path vendor
