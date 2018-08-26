@@ -4,16 +4,12 @@
 set -e
 
 # Install bundles if needed
-# bundle check || bundle install
+bundle check || bundle install
 
 # NPM install if needed.
 # npm install
-
 # Build the site.
 # gulp
-rvm install 2.4.1
-rvm use 2.2.5
-gem install jekyll
 bundle exec jekyll build
 
 # Checkout master and delete/remove everything
