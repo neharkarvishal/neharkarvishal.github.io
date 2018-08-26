@@ -19,9 +19,10 @@ before_install:
 # Deployment config
 script:
 - echo "skipping tests"
+
 deploy:
   provider: script
-  script: "./assets/scripts/build.sh"
+  script: sh $TRAVIS_BUILD_DIR/assets/scripts/build.sh
   skip_cleanup: false
   on:
     branch: travisci
