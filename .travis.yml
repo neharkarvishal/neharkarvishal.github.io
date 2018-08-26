@@ -1,5 +1,5 @@
 language: node_js
-
+sudo: required
 # Keep Travis from testing `master` branch
 branches:
   except:
@@ -17,6 +17,8 @@ before_install:
   - bundle check || bundle install
 
 # Deployment config
+script:
+- echo "skipping tests"
 deploy:
   provider: script
   script: "./assets/scripts/build.sh"
