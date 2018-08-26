@@ -6,14 +6,9 @@ branches:
   - master
 
 rvm:
-  - 2.5.1
+  - 2.4.1
 
 before_install:
-  - rvm install 2.5.1
-  - rvm use 2.5.1
-  - gem update --system
-  - gem --version
-  - gem install bundler
   - bundle check || bundle install
 
 # Deployment config
