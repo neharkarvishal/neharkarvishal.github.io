@@ -9,6 +9,7 @@ branches:
   - master
 
 before_install:
+  - ruby-install --system ruby 2.4.1
   - bundle check || bundle install
 
 # Deployment config
