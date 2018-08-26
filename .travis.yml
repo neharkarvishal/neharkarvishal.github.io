@@ -19,7 +19,7 @@ script:
 
 deploy:
   provider: script
-  script: sh $TRAVIS_BUILD_DIR/assets/scripts/build.sh
+  script: "./build.sh"
   skip_cleanup: false
   on:
     branch: travisci
