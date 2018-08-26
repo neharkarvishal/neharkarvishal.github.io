@@ -2,7 +2,7 @@
 source "https://rubygems.org"
 
 gem "jekyll"
-#travisgem 'github-pages', group: :jekyll_plugins
+# travis gem 'github-pages', group: :jekyll_plugins
 gem "jekyll-sitemap"
 gem 'jekyll-seo-tag'
 

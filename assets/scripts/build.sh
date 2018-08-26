@@ -4,8 +4,8 @@
 set -e
 
 # Install bundles if needed
-rvm install 2.5.1
-rvm use 2.5.1
+rvm install ruby-2.5.1
+rvm --default use ruby-2.5.1
 bundle check || bundle install
 
 # NPM install if needed.
