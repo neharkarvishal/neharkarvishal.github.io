@@ -81,5 +81,7 @@ liquid:
   strict_variables: false
 
 # Plugins
-plugins:
+# plugins:
+gems:
   - jekyll-sitemap
+  - jekyll-seo-tag
