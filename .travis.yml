@@ -7,8 +7,15 @@ sudo: required
 branches:
   except:
   - master
+cache:
+  - directories:
+    - "node_modules"
+    - "vendor"
 
 before_install:
+  - rvm install 2.4.1
+  - rvm use 2.4.1
+  - gem install bundler
   - bundle check || bundle install
 
 # Deployment config

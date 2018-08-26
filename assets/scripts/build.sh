@@ -1,15 +1,13 @@
 #!/bin/bash
 
-# Enable error reporting to the console.
-set -e
+set -e  # Enable error reporting to the console.
+sudo apt-get update
+sudo apt-get install ruby-full
 
-# Install bundles if needed
-bundle check || bundle install
+bundle check || bundle install # Install bundles if needed
 
-# NPM install if needed.
-# npm install
-# Build the site.
-# gulp
+# npm install # NPM install if needed.
+# gulp        # Build the site.
 bundle exec jekyll build
 
 # Checkout master and delete/remove everything
