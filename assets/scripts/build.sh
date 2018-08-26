@@ -11,6 +11,8 @@ set -e
 
 # Build the site.
 # gulp
+rvm install ruby-2.4.1
+gem install jekyll
 bundle exec jekyll build
 
 # Checkout master and delete/remove everything
