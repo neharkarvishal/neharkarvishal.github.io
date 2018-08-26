@@ -5,12 +5,9 @@ set -e
 
 # Install bundles if needed
 bundle check || bundle install
-rvm install 2.5.1
-rvm use 2.5.1
 
 # NPM install if needed.
-npm install
-
+# npm install
 # Build the site.
 # gulp
 bundle exec jekyll build

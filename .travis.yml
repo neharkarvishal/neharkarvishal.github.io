@@ -1,17 +1,15 @@
 language: ruby
+rvm:
+  - 2.4.1
+
 sudo: required
 # Keep Travis from testing `master` branch
 branches:
   except:
   - master
 
-rvm:
-- 2.5.1
-
 before_install:
-  - gem install bundler
   - bundle check || bundle install
-
 
 # Deployment config
 script:
@@ -20,10 +18,9 @@ script:
 deploy:
   provider: script
   script: sh assets/scripts/build.sh
-  skip_cleanup: false
+  skip_cleanup: true
   on:
     branch: travisci
-
 
 env:
   global:
