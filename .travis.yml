@@ -12,8 +12,9 @@ branches:
   except:
   - master
 
-# before_install:
-#   - bundle check || bundle install
+before_install:
+  - gem install jekyll
+  - bundle check || bundle install
 
 # Deployment config
 script:
