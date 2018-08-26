@@ -2,6 +2,7 @@
 
 # Enable error reporting to the console.
 set -e
+run apt-get update
 sudo apt-get install ruby-full
 # Install bundles if needed
 bundle check || bundle install
