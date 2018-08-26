@@ -1,6 +1,10 @@
 language: ruby
 rvm:
   - 2.4.1
+cache:
+  - directories:
+    - "node_modules"
+    - "vendor"
 
 sudo: required
 # Keep Travis from testing `master` branch
