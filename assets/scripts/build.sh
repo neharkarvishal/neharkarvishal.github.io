@@ -11,7 +11,8 @@ set -e
 
 # Build the site.
 # gulp
-rvm install ruby-2.4.1
+rvm install 2.4.1
+rvm use 2.2.5
 gem install jekyll
 bundle exec jekyll build
 
