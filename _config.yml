@@ -84,4 +84,4 @@ liquid:
 # plugins:
 gems:
   - jekyll-sitemap
-  - jekyll-seo-tag
+#  - jekyll-seo-tag
