@@ -14,3 +14,5 @@ bundler-update:
 
 run-and-autowatch:
     jekyll serve --watch
+
+TravisCI :we can use the GH_TOKEN and GH_EMAIL variables in our deployment script
