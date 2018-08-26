@@ -13,7 +13,7 @@ npm install
 
 # Build the site.
 # gulp
-bundle exec jekyll serve
+bundle exec jekyll build
 
 # Checkout master and delete/remove everything
 git clone https://${GH_TOKEN}@github.com/neharkarvishal/neharkarvishal.github.io.git ../neharkarvishal.github.io.git.master
