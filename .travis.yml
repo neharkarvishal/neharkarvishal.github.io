@@ -19,7 +19,7 @@ before_install:
 # Deployment config
 deploy:
   provider: script
-  script: "assets/scripts/build.sh"
+  script: "./assets/scripts/build.sh"
   skip_cleanup: false
   on:
     branch: travisci
