@@ -8,9 +8,8 @@ branches:
   except:
   - master
 
-before_install:
-  - ruby-install --system ruby 2.4.1
-  - bundle check || bundle install
+# before_install:
+#   - bundle check || bundle install
 
 # Deployment config
 script:
