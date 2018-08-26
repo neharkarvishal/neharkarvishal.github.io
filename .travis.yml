@@ -1,20 +1,17 @@
-language: node_js
+language: ruby
 sudo: required
 # Keep Travis from testing `master` branch
 branches:
   except:
   - master
 
-node_js:
-  - '6.1'
+rvm:
+- 2.5.1
+
 before_install:
-  - if [[ `npm -v` != 3* ]]; then npm i -g npm@3; fi
-  - npm cache clear
-  - rvm install 2.5.1
-  - rvm use 2.5.1
-  - . $HOME/.nvm/nvm.sh && nvm install 6.1 && nvm use 6.1
   - gem install bundler
   - bundle check || bundle install
+
 
 # Deployment config
 script:
