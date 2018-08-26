@@ -1,5 +1,4 @@
 language: node_js
-sudo: required
 
 # Keep Travis from testing `master` branch
 branches:
