@@ -16,7 +16,7 @@ npm install
 bundle exec jekyll build
 
 # Checkout master and delete/remove everything
-git clone https://${GH_TOKEN}@github.com/neharkarvishal/neharkarvishal.github.io.git ../neharkarvishal.github.io.git.master
+git clone https://${GH_TOKEN}@github.com/neharkarvishal/neharkarvishal.github.io.git ../neharkarvishal.github.io.master
 cd ../neharkarvishal.github.io.master
 git checkout master
 rm -rf *
