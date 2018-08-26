@@ -1,6 +1,6 @@
 language: ruby
 rvm:
-  - 2.3.3
+  - 2.4.1
 
 sudo: required
 # Keep Travis from testing `master` branch
@@ -13,8 +13,6 @@ cache:
     - "vendor"
 
 before_install:
-  - rvm install 2.3.3
-  - rvm use 2.3.3
   - gem install bundler
 
 # Deployment config
