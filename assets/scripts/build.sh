@@ -5,13 +5,15 @@ set -e
 
 # Install bundles if needed
 bundle check || bundle install
+rvm install 2.5.1
+rvm use 2.5.1
 
 # NPM install if needed.
 npm install
 
 # Build the site.
 # gulp
-bundle exec jekyll serve --incremental
+bundle exec jekyll serve
 
 # Checkout master and delete/remove everything
 git clone https://${GH_TOKEN}@github.com/neharkarvishal/neharkarvishal.github.io.git ../neharkarvishal.github.io.git.master
