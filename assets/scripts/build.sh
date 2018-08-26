@@ -7,7 +7,7 @@ set -e
 bundle check || bundle install
 
 # NPM install if needed.
-npm install
+# npm install
 
 # Build the site.
 # gulp
