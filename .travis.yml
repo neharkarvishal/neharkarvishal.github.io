@@ -10,7 +10,6 @@ cache:
   - node_modules
   - vendor
 before_install:
-- rvm install 2.4.1
 - rvm use 2.4.1
 - bundle check || bundle install
 script:
