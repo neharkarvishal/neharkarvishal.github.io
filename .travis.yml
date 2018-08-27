@@ -21,7 +21,7 @@ script:
 
 deploy:
   provider: script
-  script: sh assets/scripts/build.sh
+  script: sh _assets/scripts/build.sh
   skip_cleanup: true
   on:
     branch: travisci

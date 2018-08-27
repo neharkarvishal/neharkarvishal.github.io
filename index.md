@@ -7,7 +7,7 @@ layout: default
 
 Fresher, Bachelor of Engineering, Went to International institute of information technology, Pune University.
 
-- [Resume](assets/pdf/VISHAL-NEHARKAR.pdf) (pdf)
+- [Resume](_assets/pdf/VISHAL-NEHARKAR.pdf) (pdf)
 - [GitHub](https://github.com/neharkarvishal)
 - [LinkedIn](https://www.linkedin.com/in/neharkar)
 - [Twitter](https://twitter.com/)
