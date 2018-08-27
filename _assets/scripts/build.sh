@@ -3,10 +3,8 @@
 set -e  # Enable error reporting to the console.
 
 bundle check || bundle install # Install bundles if needed
-
-# npm install   # NPM install if needed.
-# gulp          # Build the site.
-bundle exec jekyll build
+npm install   # NPM install if needed.
+gulp          # Build the site.
 
 # Checkout master and delete/remove everything
 git clone https://${GH_TOKEN}@github.com/neharkarvishal/neharkarvishal.github.io.git ../neharkarvishal.github.io.master
