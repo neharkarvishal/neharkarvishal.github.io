@@ -24,6 +24,6 @@ env:
 deploy:
   provider: script
   script: sh _assets/scripts/build.sh
-  skip_cleanup: true
+  skip_cleanup: false
   on:
     branch: gulpJsIntregration
