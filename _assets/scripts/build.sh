@@ -11,6 +11,9 @@ cd ../neharkarvishal.github.io.master
 git checkout master
 rm -rf *
 
+ls ..
+ls
+
 # Copy generated HTML site from source branch in original repo.
 # Now the master branch will contain only the contents of the _site directory.
 cp -R ../neharkarvishal.github.io/_site/* .
