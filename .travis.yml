@@ -3,8 +3,8 @@ sudo: required
 branches:
   except:
   - master
-#node_js:
-#- '6.1'
+node_js:
+- '6.1'
 cache:
   - directories:
     - node_modules

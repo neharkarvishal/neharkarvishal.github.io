@@ -2,7 +2,7 @@
 
 set -e  # Enable error reporting to the console.
 bundle check || bundle install # Install bundles if needed
-npm install   # NPM install if needed.
+#npm install   # NPM install if needed.
 gulp          # Build the site.
 
 # Checkout master and delete/remove everything
