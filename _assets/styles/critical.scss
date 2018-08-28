@@ -4,6 +4,8 @@ body {
   line-height: 1.7;
   text-align: justify;
   color: #525252;
+  overflow-x: hidden;
+  margin-right: calc(-1 * (100vw - 100%));
 }
 .main {
   max-width: 700px;
