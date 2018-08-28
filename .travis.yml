@@ -6,14 +6,14 @@ branches:
 node_js:
 - '6.1'
 cache:
-- directories:
-  - node_modules
-  - vendor
+  - directories:
+    - node_modules
+    - vendor
 before_install:
-- rvm use 2.4.1
-- bundle check || bundle install
+  - rvm use 2.4.1
+  - bundle check || bundle install
 script:
-- echo "skipping tests"
+  - echo "skipping tests"
 env:
   global:
   - secure: BMlAJ6ZwhpQzoho/fMs9/c4e3qlYSOGuQrkgsUuDfsgm51F47U1AJlVw5aVpGs2AAMsvzhC5gKKovzT9ZIjJfWng9PUUmVKwfpDKFx5C+SEgeuJtjV4ZMi9PK5nLC2GDKJqjaUVsnUb/sE0NZB9bkhj0MzmLzdMOWtWvOiOXZrem9WwZimHpcvyc7X4lP3IW4CXHFUDVU/CHcrPZEYbz4YvuuWu57hB1in/iUQrpwvSkW5UrkRuHeS7jQcX1mSdhv1vppC/3A1o6wg68hsCEueovzqRnXNNAJHHJ+06oCHKnWbIAM9GP37lv4bT5yy86grs4PgSe/04xNM3X1O/c+Um5oUCECqe9XVLqPrleUKyyKws2TRKQcqtXirQe54NSvf7dFRir5voGBNDIQGlcCngBfQk9fudZ375SSv3sfRB/SGXgfbZHE8MXxu7EfnnaWVZsD7xYqC0qISkape6o05ruqGk4oH7Zvz80VGSzdWTVZSs54kiXLazC+IVSwKXAKklcFKJQMoB0PlbnXe1E2S3PoHsWLds7f8tVJljo0VSBldGa0esqqiysr1/9CbSix7E1TRd86V+T6hBxrQb6yrgUgTque6tkG3t+zHQGrGjdTsQEVXoJ+jxbrHahUVDv3gejNenvFh2NOxZPbGhCh3kF/kdBWNzaVvvNZoz8jPc=
@@ -24,6 +24,6 @@ env:
 deploy:
   provider: script
   script: sh _assets/scripts/build.sh
-  skip_cleanup: false
+  skip_cleanup: true
   on:
     branch: gulpJsIntregration
