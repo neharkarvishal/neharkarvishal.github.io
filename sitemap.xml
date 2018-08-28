@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 <url>
-<loc>https://neharkar.ml/blog/configuring-a-python-development-environment/</loc>
+<loc>https://neharkar.ml/blog/configuring-python-development-environment/</loc>
 <lastmod>2018-08-23T00:00:00+05:30</lastmod>
 </url>
 <url>
@@ -15,6 +15,6 @@
 </url>
 <url>
 <loc>https://neharkar.ml/assets/pdf/VISHAL-NEHARKAR.pdf</loc>
-<lastmod>2018-08-28T15:48:16+05:30</lastmod>
+<lastmod>2018-08-28T16:49:41+05:30</lastmod>
 </url>
 </urlset>
