@@ -33,3 +33,4 @@ curl -X DELETE "https://api.cloudflare.com/client/v4/zones/${CF_ZONE}/purge_cach
   -H "X-Auth-Key: ${CF_KEY}" \
   -H "Content-Type: application/json" \
   --data '{"purge_everything":true}'
+
