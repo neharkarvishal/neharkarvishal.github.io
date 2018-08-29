@@ -11,7 +11,7 @@
   <meta name="google-site-verification" content="uwtnY9m8ZsYtvoXmA_ogyBOCnPaj0hZ6yjnqgiyDa30" />
 <!-- Begin Jekyll SEO tag v2.4.0 -->
 <title>Configuring a Python Development Environment | Vishal Neharkar</title>
-<meta name="generator" content="Jekyll v3.7.3" />
+<meta name="generator" content="Jekyll v3.8.3" />
 <meta property="og:title" content="Configuring a Python Development Environment" />
 <meta property="og:locale" content="en_US" />
 <meta name="description" content="This article outlines how to set up a Python development environment, and introduces tools to aid development work. This article is intended for those who are unfamiliar with Python, but have experience using a text editor and the command line. The Python language itself is not covered." />
@@ -45,7 +45,7 @@
   <p class="header-date">📅 23 August 2018<br>
   
   📃
-  7 minutes read
+  8 minutes read
   
   </p>
 </header>
@@ -68,15 +68,15 @@
 
 <p>Mac (assumes <a href="http://brew.sh/">Homebrew</a> is installed):</p>
 
-<div class="language-shell highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nv">$ </span>brew install python
+<div class="language-shell highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nv">$ </span>brew <span class="nb">install </span>python
 </code></pre></div></div>
 
 <p>Windows: download and run the <a href="https://www.python.org/downloads/">installer</a>.</p>
 
 <p>Linux:</p>
 
-<div class="language-shell highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nv">$ </span><span class="nb">sudo </span>apt-get install python
-<span class="nv">$ </span><span class="nb">sudo </span>yum install python
+<div class="language-shell highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nv">$ </span><span class="nb">sudo </span>apt-get <span class="nb">install </span>python
+<span class="nv">$ </span><span class="nb">sudo </span>yum <span class="nb">install </span>python
 </code></pre></div></div>
 
 <p>For more information on installing Python, check this <a href="http://docs.python-guide.org/en/latest/starting/installation/">guide</a>.</p>
@@ -122,14 +122,14 @@ hello
 
 <p>To install a package, run:</p>
 
-<div class="language-shell highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nv">$ </span>pip install &lt;package_name&gt;
+<div class="language-shell highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nv">$ </span>pip <span class="nb">install</span> &lt;package_name&gt;
 </code></pre></div></div>
 
 <p>Python has a rich collection of packages, and before implementing something, it’s worth Googling to see if it’s been done before. Packages are listed on the <a href="https://pypi.org/">Python Package Index</a>.</p>
 
 <p>For example, the library <a href="http://docs.python-requests.org/en/master/">requests</a> can be installed by running:</p>
 
-<div class="language-shell highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nv">$ </span>pip install requests
+<div class="language-shell highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nv">$ </span>pip <span class="nb">install </span>requests
 </code></pre></div></div>
 
 <p>To see what packages have been installed, run:</p>
@@ -147,19 +147,19 @@ hello
 
 <p>When writing new programs, the latest version should usually be used. In the pip commands above, pip downloaded the latest version of that package, as no version number was specified. There are however, some times when a particular package version should be installed. This can be done with:</p>
 
-<div class="language-shell highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nv">$ </span>pip install &lt;package_name&gt;<span class="o">==</span>&lt;version_number&gt;
+<div class="language-shell highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nv">$ </span>pip <span class="nb">install</span> &lt;package_name&gt;<span class="o">==</span>&lt;version_number&gt;
 </code></pre></div></div>
 
 <p>e.g:</p>
 
-<div class="language-shell highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nv">$ </span>pip install <span class="nv">requests</span><span class="o">==</span>2.0.0
+<div class="language-shell highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nv">$ </span>pip <span class="nb">install </span><span class="nv">requests</span><span class="o">==</span>2.0.0
 </code></pre></div></div>
 
 <h3 id="multiple-requirements">Multiple requirements</h3>
 
 <p>The packages required by a program are conventionally added to a file named <code class="highlighter-rouge">requirements.txt</code>. This allows other developers to install all requirements with a single command:</p>
 
-<div class="language-shell highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nv">$ </span>pip install <span class="nt">-r</span> requirements.txt
+<div class="language-shell highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nv">$ </span>pip <span class="nb">install</span> <span class="nt">-r</span> requirements.txt
 </code></pre></div></div>
 
 <h2 id="virtual-environments">Virtual Environments</h2>
@@ -168,7 +168,7 @@ hello
 
 <p>Virtual environments allow Python packages to be installed non-globally. This allows the above developer to work on A and B simultaneously without having to uninstall and reinstall <code class="highlighter-rouge">requests</code>. Virtual environments work by installing packages to a folder specified by the user, rather than the global folder. Virtual environments are managed by the tool <code class="highlighter-rouge">virtualenv</code>. This can be installed with:</p>
 
-<div class="language-shell highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nv">$ </span>pip install virtualenv
+<div class="language-shell highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nv">$ </span>pip <span class="nb">install </span>virtualenv
 </code></pre></div></div>
 
 <p>A virtualenv can be created with:</p>
@@ -196,7 +196,7 @@ hello
 
 <p>Flake8 is a CLI tool which checks code for compliance with two documents, PEP8 and PyFlakes. Flake8 can be installed with pip:</p>
 
-<div class="language-shell highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nv">$ </span>pip install flake8
+<div class="language-shell highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nv">$ </span>pip <span class="nb">install </span>flake8
 </code></pre></div></div>
 
 <p>Flake8 can lint a python file with:</p>
