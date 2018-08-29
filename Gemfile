@@ -12,3 +12,4 @@ gem 'subexec'
 gem 'jekyll-seo-tag', '~> 2.4.0'
 
 gem "tzinfo-data", platforms: [:mingw, :mswin, :x64_mingw, :jruby]
+gem 'wdm', '>= 0.1.0'
