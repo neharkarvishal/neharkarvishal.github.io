@@ -1,5 +1,5 @@
 language: node_js
-# sudo: required
+sudo: required
 branches:
   except:
   - master
@@ -9,7 +9,6 @@ cache:
   - directories:
     - node_modules
     - vendor
-
 before_install:
   - rvm use 2.4.1
 #  - bundle check || bundle install
