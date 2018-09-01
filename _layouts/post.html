@@ -2,17 +2,18 @@
 layout: default
 ---
 
+
 {% include page_head.html %}
 <header>
-  <!-- <h1>{{ page.title }}</h1> -->
-  <p class="header-date">📅 {{ page.date | date_to_long_string}}<br>
-  {% capture words %}
-  {{ content | number_of_words | minus: 180 }}
-  {% endcapture %}
-  {% unless words contains '-' %}📃
-  {{ words | plus: 150 | divided_by: 150 | append: ' minutes read' }}
-  {% endunless %}
-  </p>
+<!-- <h1>{{ page.title }}</h1> -->
+<p class="header-date">📅 {{ page.date | date_to_long_string}}<br>
+{% capture words %}
+{{ content | number_of_words | minus: 180 }}
+{% endcapture %}
+{% unless words contains '-' %}📃
+{{ words | plus: 150 | divided_by: 150 | append: ' minutes read' }}
+{% endunless %}
+</p>
 </header>
 {{ content }}
 {% include post_footer.html %}
