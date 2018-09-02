@@ -29,11 +29,58 @@
 
 </head>
 
+<body class="layout-reverse">
 
-<label> <input type='checkbox'> <span class='hammenu'> <span class='hamburger'></span> </span>
-<ul> <li> <a href='/'>Home</a> </li> <li> <a href='/blog/'>All Posts</a> </li> <li> <a href='/tags/'>Tags</a> </li> </ul>
-</label>
-<body>
+<!-- Target for toggling the sidebar `.sidebar-checkbox` is for regular
+     styles, `#sidebar-checkbox` for behavior. -->
+<input type="checkbox" class="sidebar-checkbox" id="sidebar-checkbox">
+
+<!-- Toggleable sidebar -->
+<div class="sidebar" id="sidebar">
+  <div class="sidebar-item">
+    <p>A blog about programming, gaming and internet culture.</p>
+  </div>
+
+  <nav class="sidebar-nav">
+    <a class="sidebar-nav-item" href="/">Home</a>
+
+    
+
+    
+    
+      
+        
+      
+    
+      
+        
+      
+    
+      
+        
+      
+    
+      
+    
+      
+    
+      
+        
+      
+    
+
+    <a class="sidebar-nav-item" href="/tags/">Tags</a>
+    <a class="sidebar-nav-item" href="/blog/">All posts</a>
+    <span class="sidebar-nav-item">Currently v3.0.1</span>
+  </nav>
+
+  <div class="sidebar-item">
+    <p>
+      &copy; 2018. All rights reserved.
+    </p>
+  </div>
+</div>
+
 <div class="main">
 <div id="archives">
 
@@ -64,5 +111,12 @@
 <script type="text/javascript" src="/assets/js/main.js" async></script>
 <!-- End JavaScripts -->
 
+
+<label for="sidebar-checkbox" class="sidebar-toggle"></label>
+<script>
+(function(document){var toggle = document.querySelector('.sidebar-toggle');var sidebar = document.querySelector('#sidebar');var checkbox = document.querySelector('#sidebar-checkbox');
+document.addEventListener('click', function(e) {var target = e.target;if(!checkbox.checked || sidebar.contains(target) || (target === checkbox || target === toggle)) return;
+checkbox.checked = false;}, false);})(document);
+</script>
 </body>
 </html>

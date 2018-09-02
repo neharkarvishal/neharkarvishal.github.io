@@ -26,4 +26,4 @@ deploy:
   script: sh _assets/scripts/build.sh
   skip_cleanup: true
   on:
-    branch: gulpJsIntregration
+    branch: ver.3.addedSidebar
