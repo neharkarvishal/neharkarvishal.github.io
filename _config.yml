@@ -3,6 +3,7 @@
 is_production: 1
 
 # Site settings:
+version:             3.0.1
 title: Vishal Neharkar
 timezone: Asia/Kolkata
 email: neharkar.vishal@gmail.com
