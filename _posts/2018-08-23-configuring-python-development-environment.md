@@ -236,3 +236,5 @@ $ python debug.py
 ```
 
 After debugging is done, the user can continue the execution of the program by typing `c`, which stands for continue.
+
+* * *
