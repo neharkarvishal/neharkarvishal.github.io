@@ -1,0 +1,275 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<meta charset="utf-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#faf0e6">
+<style>body{font-size:85%;font-family:Consolas,"Liberation Mono",Menlo,Courier,monospace;line-height:1.7;text-align:justify;color:#525252;overflow-x:hidden;margin-right:calc(-1 * (100vw - 100%))}.main{max-width:700px;margin:50px auto 50px}</style>
+<link rel="preload" href="/assets/styles/main.css" as="style" onload="this.onload=null;this.rel='stylesheet'"><noscript><link rel="stylesheet" href="/assets/styles/main.css"></noscript>
+<link rel="preload" href="/assets/styles/syntax.css" as="style" onload="this.onload=null;this.rel='stylesheet'"><noscript><link rel="stylesheet" href="/assets/styles/syntax.css"></noscript>
+<link rel="icon" id=​"favicon" type="image/png" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABAAQMAAACQp+OdAAAABlBMVEUiHh/4+fj1ZnFqAAAAAnRSTlP/AOW3MEoAAAAJcEhZcwAACxMAAAsTAQCanBgAAABUSURBVCgVY/gPBdgYDQxAwIif0Q5S+pAAowGolhDjw4cPWBhEa+//8B8PA6GYcgZhL+MNMVDIAgn8jB8gxfL4GQ38/Px8jAQYBcBAJMAgHMt4EgkAEFs1LkvU77IAAAAASUVORK5CYII=">
+<meta name="google-site-verification" content="uwtnY9m8ZsYtvoXmA_ogyBOCnPaj0hZ6yjnqgiyDa30" />
+<!-- Begin Jekyll SEO tag v2.4.0 -->
+<title>Build a Blog With Jekyll and GitHub Pages | Vishal Neharkar</title>
+<meta name="generator" content="Jekyll v3.8.3" />
+<meta property="og:title" content="Build a Blog With Jekyll and GitHub Pages" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="This article outlines how to set up a blog, and host any static website, Jekyll and GitHub Pages offer a minimalistic solution. This article is intended for those who are unfamiliar with Jekyll. Jekyll is a simple, blog-aware, static site generator for personal, project, or organization sites and host it online for free using GitHub pages." />
+<meta property="og:description" content="This article outlines how to set up a blog, and host any static website, Jekyll and GitHub Pages offer a minimalistic solution. This article is intended for those who are unfamiliar with Jekyll. Jekyll is a simple, blog-aware, static site generator for personal, project, or organization sites and host it online for free using GitHub pages." />
+<link rel="canonical" href="https://neharkar.ml/blog/Build-a-Blog-With-Jekyll-and-GitHub-Pages/" />
+<meta property="og:url" content="https://neharkar.ml/blog/Build-a-Blog-With-Jekyll-and-GitHub-Pages/" />
+<meta property="og:site_name" content="Vishal Neharkar" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2018-09-01T00:00:00+05:30" />
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:site" content="@cyb3r_fr3ak" />
+<meta name="twitter:creator" content="@cyb3r_fr3ak" />
+<script type="application/ld+json">
+{"description":"This article outlines how to set up a blog, and host any static website, Jekyll and GitHub Pages offer a minimalistic solution. This article is intended for those who are unfamiliar with Jekyll. Jekyll is a simple, blog-aware, static site generator for personal, project, or organization sites and host it online for free using GitHub pages.","url":"https://neharkar.ml/blog/Build-a-Blog-With-Jekyll-and-GitHub-Pages/","headline":"Build a Blog With Jekyll and GitHub Pages","dateModified":"2018-09-01T00:00:00+05:30","datePublished":"2018-09-01T00:00:00+05:30","@type":"BlogPosting","publisher":{"@type":"Organization","logo":{"@type":"ImageObject","url":"https://neharkar.ml/_assets/img/baseED.png"}},"mainEntityOfPage":{"@type":"WebPage","@id":"https://neharkar.ml/blog/Build-a-Blog-With-Jekyll-and-GitHub-Pages/"},"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body class="layout-reverse">
+
+<!-- Target for toggling the sidebar `.sidebar-checkbox` is for regular
+     styles, `#sidebar-checkbox` for behavior. -->
+<input type="checkbox" class="sidebar-checkbox" id="sidebar-checkbox">
+
+<!-- Toggleable sidebar -->
+<div class="sidebar" id="sidebar">
+  <div class="sidebar-item">
+    <p>A blog about programming, gaming and internet culture.</p>
+  </div>
+
+  <nav class="sidebar-nav">
+    <a class="sidebar-nav-item" href="/">Home</a>
+
+    
+
+    
+    
+      
+        
+      
+    
+      
+        
+      
+    
+      
+        
+      
+    
+      
+    
+      
+    
+      
+        
+      
+    
+
+    <a class="sidebar-nav-item" href="/tags/">Tags</a>
+    <a class="sidebar-nav-item" href="/blog/">All posts</a>
+    <span class="sidebar-nav-item">Currently v3.0.1</span>
+  </nav>
+
+  <div class="sidebar-item">
+    <p>
+      &copy; 2018. All rights reserved.
+    </p>
+  </div>
+</div>
+
+<div class="main">
+
+<div id="breadcrumbs">
+  <h2><a href="/">Home</a>
+    / <a href="/blog/">Blog</a>
+    / Build a blog with jekyll and github pages
+  </h2>
+</div>
+<header>
+<!-- <h1>Build a Blog With Jekyll and GitHub Pages</h1> -->
+<p class="header-date">📅 01 September 2018<br>
+
+📃
+6 minutes read
+
+</p>
+</header>
+<p>This article outlines how to set up a blog, and host any static website, Jekyll and GitHub Pages offer a minimalistic solution.
+This article is intended for those who are unfamiliar with Jekyll. Jekyll is a simple, blog-aware,
+static site generator for personal, project, or organization sites and host it online for free using GitHub pages.</p>
+
+<h2 id="sections">Sections</h2>
+
+<ul>
+  <li><a href="#getting-started-with-jekyll">Getting started with Jekyll</a></li>
+  <li><a href="#customizing-the-site">Customizing the site</a></li>
+  <li><a href="#deploying-to-github-pages">Deploying to Github Pages</a></li>
+</ul>
+
+<h2 id="getting-started-with-jekyll">Getting started with Jekyll</h2>
+
+<p>Jekyll is a simple, extendable, static site generator. You give it text written in your favorite markup language and it 
+churns through layouts to create a static website.
+Throughout that process you can tweak how you want the site URLs to look, what data gets displayed in the layout, and more.</p>
+
+<p>To use <a href="https://jekyllrb.com/">Jekyll</a>, we need <a href="https://www.ruby-lang.org/en/">Ruby</a> and <a href="https://rubygems.org/">RubyGems</a>.
+Jekyll is written in Ruby and RubyGems is a package manager for Ruby.</p>
+
+<p>Install Jekyll and bundler gems:</p>
+
+<div class="language-shell highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nv">$ </span>gem <span class="nb">install </span>jekyll bundler
+</code></pre></div></div>
+
+<p>Create a new Jekyll site named <code class="highlighter-rouge">myblog</code>:</p>
+
+<div class="language-shell highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nv">$ </span>jekyll new myblog
+<span class="nv">$ </span><span class="nb">cd </span>myblog
+</code></pre></div></div>
+<p>Jekyll will create the following folders and files in our directory:</p>
+<div class="language-shell highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">.</span>
+├── 404.html
+├── about.md
+├── _config.yml
+├── Gemfile
+├── Gemfile.lock
+├── index.md
+└── _posts
+    └── 2018-09-03-welcome-to-jekyll.markdown
+</code></pre></div></div>
+
+<p>Build the site and make it available on a local server:</p>
+<div class="language-shell highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nv">$ </span>bundle <span class="nb">exec </span>jekyll serve <span class="nt">--watch</span>
+</code></pre></div></div>
+
+<p>Now browse to <a href="http://localhost:4000">http://localhost:4000</a> in your browser to see your site.</p>
+
+<h2 id="customizing-the-site">Customizing the site</h2>
+
+<p>By defaul the site will be styled with Minima theme which is the default theme of the Jakyll, configuration settings for
+our site is stored in <code class="highlighter-rouge">_config.yml</code> file. <code class="highlighter-rouge">Gemfile</code> stores list of Gem dependencies in our project. <code class="highlighter-rouge">_post</code> folder will be
+used for blog posts on site. <code class="highlighter-rouge">_site</code> will the folder where statically generated files for hosting will be stored.</p>
+
+<h3 id="layouts">Layouts</h3>
+<p>Files in the <code class="highlighter-rouge">_layouts</code> directory contain templates for creating pages. 
+The purpose of the layouts is to abstract away the structure of the pages from the content. 
+When you create a page, like <code class="highlighter-rouge">about.md</code>, the content that is inside will be injected into the layout where
+ {{ content }} is specified.
+We can also create a layout that inherits another layout. For example, the <code class="highlighter-rouge">page.html</code> is based on the default layout.</p>
+
+<p>Let us add another page to our site. Create a file named <code class="highlighter-rouge">projects.md</code>, and save it to the root of your directory. Add the following inside:</p>
+
+<div class="language-markdown highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nn">---</span>
+<span class="na">layout</span><span class="pi">:</span> <span class="s">page</span>
+<span class="na">title</span><span class="pi">:</span> <span class="s">Projects</span>
+<span class="na">permalink</span><span class="pi">:</span> <span class="s">/projects/</span>
+<span class="nn">---</span>
+</code></pre></div></div>
+
+<p>This is called the front matter and tells Jekyll how to build the page. This page will use the <code class="highlighter-rouge">page.html</code> template from the <code class="highlighter-rouge">_includes</code> directory.
+Where the <code class="highlighter-rouge">page.title</code> variable is used in the template, it will be replaced with the text “Projects”.</p>
+
+<h3 id="includes">Includes</h3>
+<p>The templates for our header, footer, and head of our site are located in the <code class="highlighter-rouge">_includes</code> directory.
+Includes are useful for separating sections of your pages that will be used in multiple places.
+You create the template and include it in your layout or pages with {% include file_name.html %},
+where file_name is replaced with the name of the file.</p>
+
+<h3 id="posts">Posts</h3>
+<p>The <code class="highlighter-rouge">_posts</code> folder contains our blog posts. To create a new post, create a file with the format <code class="highlighter-rouge">yyyy-mm-dd-title-of-post.md</code>.
+For example: 2018-09-3-build-a-website.md. Add the following front matter to the file:</p>
+<div class="language-markdown highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nn">---</span>
+<span class="na">layout</span><span class="pi">:</span> <span class="s">post</span>
+<span class="na">title</span><span class="pi">:</span>  <span class="s2">"</span><span class="s">Build</span><span class="nv"> </span><span class="s">a</span><span class="nv"> </span><span class="s">Website"</span>
+<span class="na">date</span><span class="pi">:</span>   <span class="s">2018-09-1 00:00:00 +05:30</span>
+<span class="na">permalink</span><span class="pi">:</span> <span class="s">blog/build-a-website.html</span>
+<span class="nn">---</span>
+</code></pre></div></div>
+<p>When we refresh the browser, we will see the post added to the front page.
+Unlike in the example post provided, we added an author variable and a permalink.
+If a permalink had not been specified, the filename would be used as the path.
+Other page variables you can specify for posts include tags and categories.</p>
+
+<h3 id="sass">Sass</h3>
+<p>The <code class="highlighter-rouge">_sass</code> directory contains the styles for the site. Sass is a CSS framework for creating stylesheets.
+Sass files use a <code class="highlighter-rouge">.scss</code> extension. Files that begin with an underscore, such as <code class="highlighter-rouge">_base.scss</code>,
+are partials and can be imported in your main sass file. We can also define variables to replace hard-coded values.
+Variables begin with a <code class="highlighter-rouge">$</code>. When your site is built, these sass files are automatically converted into CSS.</p>
+
+<h3 id="assets">Assets</h3>
+<p>The <code class="highlighter-rouge">assets</code> folder is where you will store your images, fonts, scripts, and styles.</p>
+
+<h2 id="deploying-to-github-pages">Deploying to Github Pages</h2>
+<p>To get started, we will need to have a github account and have git installed on our computer.
+In your dashboard, click the link to create a new repository and name it username.github.io
+where username is replaced with the username of your account.</p>
+
+<p>From your terminal inside the root of your project, initialize git:</p>
+<div class="language-shell highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nv">$ </span>git init
+</code></pre></div></div>
+<p>Add all of the files:</p>
+<div class="language-shell highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nv">$ </span>git add <span class="nt">--all</span>
+</code></pre></div></div>
+<p>Save the changes:</p>
+<div class="language-shell highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nv">$ </span>git commit <span class="nt">-m</span> <span class="s2">"Initial commit"</span>
+</code></pre></div></div>
+<p>Set up the remote repository to push to:</p>
+<div class="language-shell highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nv">$ </span>git remote add origin https://github.com/username/repo_name.git
+</code></pre></div></div>
+<p>Finally, push your changes to the remote repository:</p>
+<div class="language-shell highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nv">$ </span>git push <span class="nt">-u</span> origin master
+</code></pre></div></div>
+
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+  <li><a href="https://help.github.com/articles/troubleshooting-github-pages-builds">Troubleshooting GitHub Pages Builds</a></li>
+  <li><a href="https://help.github.com/articles/using-jekyll-as-a-static-site-generator-with-github-pages/">Using Jekyll as a static site generator with GitHub Pages</a></li>
+  <li><a href="http://jekyllrb.com/docs/github-pages/">Jekyll’s official GitHub Pages documentation</a></li>
+  <li><a href="http://jekyllrb.com/docs/usage/">Jekyll commands</a></li>
+</ul>
+
+<hr />
+
+
+<footer>
+<picture>
+    <source srcset="https://neharkar.ml/assets/processed-img/reduced2048-500by500-76b1ee.png" media="(min-width: 400px) and (-webkit-min-device-pixel-ratio: 2), (min-width: 400px) and (min-resolution: 192dpi)">
+    <source srcset="https://neharkar.ml/assets/processed-img/reduced2048-288by288-76b1ee.png" media="(min-width: 400px)">
+    <source srcset="https://neharkar.ml/assets/processed-img/reduced2048-400by400-76b1ee.png" media="(-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi)">
+    <source srcset="https://neharkar.ml/assets/processed-img/reduced2048-200by200-76b1ee.png">
+    <img src="https://neharkar.ml/assets/processed-img/reduced2048-200by200-76b1ee.png" class="image--team-individual" itemprop="image" alt="Profile picture" >
+  </picture>
+
+<!-- <hr><img src="/_assets/img/reduced2048.png" alt="portrait" height="200" width="200"> -->
+<p><strong>About the author</strong>:
+Vishal Neharkar is gamer, streetwear enthusiast, tech nerd with a good grasp on internet/gaming/tech culture.
+For updates, follow him on
+<a href="https://twitter.com/">Twitter</a> or <a href="https://github.com/neharkarvishal">GitHub</a>.</p>
+<ul> <li><a href="/">Home</a></li> <li><a href="/blog/">More posts</a></li> </ul>
+</footer>
+
+</div>
+
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-124529127-1"></script>
+<script>window.dataLayer = window.dataLayer || [];function gtag(){dataLayer.push(arguments);}gtag('js', new Date());gtag('config', 'UA-124529127-1');</script>
+<!-- End  -->
+
+<!-- JavaScripts -->
+<script type="text/javascript" src="/assets/js/main.js" async></script>
+<!-- End JavaScripts -->
+
+
+<label for="sidebar-checkbox" class="sidebar-toggle"></label>
+<script>
+(function(document){var toggle = document.querySelector('.sidebar-toggle');var sidebar = document.querySelector('#sidebar');var checkbox = document.querySelector('#sidebar-checkbox');
+document.addEventListener('click', function(e) {var target = e.target;if(!checkbox.checked || sidebar.contains(target) || (target === checkbox || target === toggle)) return;
+checkbox.checked = false;}, false);})(document);
+</script>
+</body>
+</html>
