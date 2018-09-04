@@ -21,12 +21,9 @@ static site generator for personal, project, or organization sites and host it o
 
 ## Getting started with Jekyll
 
-Jekyll is a simple, extendable, static site generator. You give it text written in your favorite markup language and it 
-churns through layouts to create a static website.
-Throughout that process you can tweak how you want the site URLs to look, what data gets displayed in the layout, and more.
-
+Jekyll is a simple, extendable, static site generator.
 To use [Jekyll](https://jekyllrb.com/), we need [Ruby](https://www.ruby-lang.org/en/) and [RubyGems](https://rubygems.org/).
-Jekyll is written in Ruby and RubyGems is a package manager for Ruby.
+Jekyll is written in Ruby.
 
 Install Jekyll and bundler gems:
 
@@ -67,8 +64,7 @@ our site is stored in `_config.yml` file. `Gemfile` stores list of Gem dependenc
 used for blog posts on site. `_site` will the folder where statically generated files for hosting will be stored.
 
 ### Layouts
-Files in the `_layouts` directory contain templates for creating pages. 
-The purpose of the layouts is to abstract away the structure of the pages from the content. 
+Files in the `_layouts` directory contain templates for creating pages.
 When you create a page, like `about.md`, the content that is inside will be injected into the layout where
 {% raw  %} {{ content }}{% endraw %} is specified.
 We can also create a layout that inherits another layout. For example, the `page.html` is based on the default layout.
@@ -111,9 +107,7 @@ Other page variables you can specify for posts include tags and categories.
 
 ### Sass
 The `_sass` directory contains the styles for the site. Sass is a CSS framework for creating stylesheets.
-Sass files use a `.scss` extension. Files that begin with an underscore, such as `_base.scss`,
-are partials and can be imported in your main sass file. We can also define variables to replace hard-coded values.
-Variables begin with a `$`. When your site is built, these sass files are automatically converted into CSS.
+When your site is built, these sass files are automatically converted into CSS.
 
 ### Assets
 The `assets` folder is where you will store your images, fonts, scripts, and styles.
