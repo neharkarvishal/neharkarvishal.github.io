@@ -96,7 +96,7 @@
 <p class="header-date">📅 01 September 2018<br>
 
 📃
-6 minutes read
+5 minutes read
 
 </p>
 </header>
@@ -114,12 +114,9 @@ static site generator for personal, project, or organization sites and host it o
 
 <h2 id="getting-started-with-jekyll">Getting started with Jekyll</h2>
 
-<p>Jekyll is a simple, extendable, static site generator. You give it text written in your favorite markup language and it 
-churns through layouts to create a static website.
-Throughout that process you can tweak how you want the site URLs to look, what data gets displayed in the layout, and more.</p>
-
-<p>To use <a href="https://jekyllrb.com/">Jekyll</a>, we need <a href="https://www.ruby-lang.org/en/">Ruby</a> and <a href="https://rubygems.org/">RubyGems</a>.
-Jekyll is written in Ruby and RubyGems is a package manager for Ruby.</p>
+<p>Jekyll is a simple, extendable, static site generator.
+To use <a href="https://jekyllrb.com/">Jekyll</a>, we need <a href="https://www.ruby-lang.org/en/">Ruby</a> and <a href="https://rubygems.org/">RubyGems</a>.
+Jekyll is written in Ruby.</p>
 
 <p>Install Jekyll and bundler gems:</p>
 
@@ -156,8 +153,7 @@ our site is stored in <code class="highlighter-rouge">_config.yml</code> file. <
 used for blog posts on site. <code class="highlighter-rouge">_site</code> will the folder where statically generated files for hosting will be stored.</p>
 
 <h3 id="layouts">Layouts</h3>
-<p>Files in the <code class="highlighter-rouge">_layouts</code> directory contain templates for creating pages. 
-The purpose of the layouts is to abstract away the structure of the pages from the content. 
+<p>Files in the <code class="highlighter-rouge">_layouts</code> directory contain templates for creating pages.
 When you create a page, like <code class="highlighter-rouge">about.md</code>, the content that is inside will be injected into the layout where
  {{ content }} is specified.
 We can also create a layout that inherits another layout. For example, the <code class="highlighter-rouge">page.html</code> is based on the default layout.</p>
@@ -197,9 +193,7 @@ Other page variables you can specify for posts include tags and categories.</p>
 
 <h3 id="sass">Sass</h3>
 <p>The <code class="highlighter-rouge">_sass</code> directory contains the styles for the site. Sass is a CSS framework for creating stylesheets.
-Sass files use a <code class="highlighter-rouge">.scss</code> extension. Files that begin with an underscore, such as <code class="highlighter-rouge">_base.scss</code>,
-are partials and can be imported in your main sass file. We can also define variables to replace hard-coded values.
-Variables begin with a <code class="highlighter-rouge">$</code>. When your site is built, these sass files are automatically converted into CSS.</p>
+When your site is built, these sass files are automatically converted into CSS.</p>
 
 <h3 id="assets">Assets</h3>
 <p>The <code class="highlighter-rouge">assets</code> folder is where you will store your images, fonts, scripts, and styles.</p>
