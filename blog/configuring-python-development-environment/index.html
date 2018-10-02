@@ -280,8 +280,8 @@ demo.py:5:1: E303 too many blank lines <span class="o">(</span>3<span class="o">
 
 <p>When code isn’t running as it is supposed to, it is useful to check the state of variables in the broken section of code. This can be done by printing out variables, but it can be quicker to do this using a debugger. The builtin debugger is named <code class="highlighter-rouge">pdb</code>. <code class="highlighter-rouge">pdb</code> is often used through the function <code class="highlighter-rouge">set_trace()</code>. As a program is executed, when the function <code class="highlighter-rouge">set_trace()</code> is called, execution is paused, and the user is dropped into an interactive REPL session. From this session, the user has access to all variables which in scope at the line where <code class="highlighter-rouge">set_trace()</code> has been added. For example:</p>
 
-<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c"># debug.py</span>
-<span class="kn">import</span> <span class="nn">pdb</span>
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1"># debug.py
+</span><span class="kn">import</span> <span class="nn">pdb</span>
 
 <span class="k">def</span> <span class="nf">func</span><span class="p">():</span>
     <span class="n">a</span> <span class="o">=</span> <span class="mi">10</span>
