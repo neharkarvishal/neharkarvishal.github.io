@@ -10,8 +10,9 @@ cache:
     - node_modules
     - vendor
 before_install:
-  - rvm use 2.4.1
-#  - bundle check || bundle install
+# - rvm use 2.4.1
+  - rvm install "ruby-2.4.1"
+# - bundle check || bundle install
 script:
   - echo "skipping tests"
 env:
