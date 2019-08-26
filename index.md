@@ -5,7 +5,7 @@ layout: default
 
 # Vishal Neharkar
 
-Fresher, Bachelor of Engineering, Went to International institute of information technology, Pune University.
+Tech nerd, programming enthusiast, Bachelor of Engineering, Went to International institute of information technology, Pune University.
 
 - [Resume](assets/pdf/VISHAL-NEHARKAR.pdf) (pdf)
 - [GitHub](https://github.com/neharkarvishal)
@@ -22,7 +22,5 @@ Fresher, Bachelor of Engineering, Went to International institute of information
 ## Projects
 
 - [neharkar.ml](https://neharkarvishal.github.io), personal blog and website built with Jekyll/Gitpages.
-- [\#mysite](https://github.com/neharkarvishal/mysite), template WebApp for building blog, made using Django/Python.
 - [CalculatorDroid](https://github.com/neharkarvishal/CalculatorDroid), android application for basic arithmetic calculations.
-- [Contrast-Ratio](https://neharkarvishal.github.io/contrast-ratio), tool to calculate contrast ratio between any two CSS colors.
 - [bareboneOS](https://github.com/neharkarvishal/OS-from-scratch-tutorial), a very simple bootloader-based operating system.
