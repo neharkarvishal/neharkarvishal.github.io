@@ -5,7 +5,7 @@ layout: default
 
 # Vishal Neharkar
 
-Tech nerd, programming enthusiast, Bachelor of Engineering, Went to International institute of information technology, Pune University.
+Tech nerd, fullstack developer, Functional reactive programming enthusiast, Bachelor of Engineering, Went to International institute of information technology, Pune.
 
 - [Resume](assets/pdf/VISHAL-NEHARKAR.pdf) (pdf)
 - [GitHub](https://github.com/neharkarvishal)
