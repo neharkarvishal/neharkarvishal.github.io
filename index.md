@@ -21,6 +21,6 @@ Tech nerd, fullstack developer, Functional reactive programming enthusiast, Bach
 
 ## Projects
 
-- [neharkar.ml](https://neharkarvishal.github.io), personal blog and website built with Jekyll and Travis for CI/CD, deployment workflow.
+- [neharkar.ml](https://neharkarvishal.github.io), blog built with Jekyll and Travis for CI/CD, deployment workflow.
 - [Moviehub monorepo](https://github.com/neharkarvishal/moviehub-monorepo), digital guide, movie db build with React and Cloudflare Workers.
 - [bareboneOS](https://github.com/neharkarvishal/OS-from-scratch-tutorial), a very simple bootloader.
