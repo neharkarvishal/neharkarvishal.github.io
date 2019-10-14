@@ -22,5 +22,5 @@ Tech nerd, fullstack developer, Functional reactive programming enthusiast, Bach
 ## Projects
 
 - [neharkar.ml](https://neharkarvishal.github.io), personal blog and website built with Jekyll/Gitpages.
-- [CalculatorDroid](https://github.com/neharkarvishal/CalculatorDroid), android application for basic arithmetic calculations.
-- [bareboneOS](https://github.com/neharkarvishal/OS-from-scratch-tutorial), a very simple bootloader-based operating system.
+- [Moviehub monorepo](https://github.com/neharkarvishal/moviehub-monorepo), digital guide, movie db build with React and Cloudflare Workers.
+- [bareboneOS](https://github.com/neharkarvishal/OS-from-scratch-tutorial), a very simple bootloader.
